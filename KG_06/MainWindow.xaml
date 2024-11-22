@@ -1,0 +1,33 @@
+﻿<Window x:Class="KG_06.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KG_06"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Name="ImageDisplay" Grid.Column="1" Stretch="Uniform" />
+
+        <Border Background="#80FFFFFF" CornerRadius="10" BorderBrush="Black" BorderThickness="1" Margin="2">
+            <StackPanel Margin="10">
+                <Button Name="LoadImageButton" Click="LoadImageButton_Click" Margin="2">Загрузить изображение</Button>
+                <Button Name="AddNoiseButton" Click="AddNoiseButton_Click" Margin="2">Добавить шум (случайный)</Button>
+                <Button Name="AddPointNoiseButton" Click="AddPointNoiseButton_Click" Margin="2">Добавить шум (точки)</Button>
+                <Button Name="AddLineNoiseButton" Click="AddLineNoiseButton_Click" Margin="2">Добавить шум (линии)</Button>
+                <Button Name="AddCircleNoiseButton" Click="AddCircleNoiseButton_Click" Margin="2">Добавить шум (окружности)</Button>
+                <Button Name="ApplyGaussianFilterButton" Click="ApplyGaussianFilterButton_Click" Margin="2">Фильтр Гаусса</Button>
+                <Button Name="ApplyUniformFilterButton" Click="ApplyUniformFilterButton_Click" Margin="2">Равномерный фильтр</Button>
+                <Button Name="SharpenButton" Click="SharpenButton_Click" Margin="2">Повысить резкость</Button>
+                <Button Name="ApplyGlassEffectButton" Click="ApplyGlassEffectButton_Click" Margin="2">Стеклянный эффект</Button>
+                <Button Name="ApplyExtendedGlassEffectButton" Click="ApplyExtendedGlassEffectButton_Click" Margin="2">Размытие</Button>
+                <Button Name="ResetButton" Click="ResetButton_Click" Margin="2">Сброс</Button>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>
