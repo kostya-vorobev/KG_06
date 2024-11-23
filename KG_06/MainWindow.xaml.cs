@@ -32,12 +32,7 @@ namespace KG_06
         }
         private void ApplyExtendedGlassEffectButton_Click(object sender, RoutedEventArgs e)
         {
-            // Применение эффекта, например, настройка фона или размытие
-            // В WPF без использования дополнительных библиотек это можно сделать через стили и цвета
-            // Например, создаем эффект размытия
             ImageDisplay.Effect = new System.Windows.Media.Effects.BlurEffect { Radius = 50 };
-
-            // Также можно настроить дополнительные стили элементов интерфейса, чтобы имитировать эффекты стекла
         }
 
         private void ResetButton_Click(object sender, RoutedEventArgs e)
